@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:andriod="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <import type="com.leavesc.databinding_demo.model.User" />
+
+        <import type="com.leavesc.databinding_demo.Main5Activity.UserPresenter" />
+
+        <import type="com.leavesc.databinding_demo.StringUtils" />
+
+        <import type="com.leavesc.databinding_demo.Main5Activity.CustomHandler"/>
+
+        <variable
+            name="userInfo"
+            type="User" />
+
+        <variable
+            name="userPresenter"
+            type="UserPresenter" />
+
+        <variable
+            name="isVisible"
+            type="Boolean"/>
+
+        <variable
+            name="customHandler"
+            type="CustomHandler"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:context="com.leavesc.databinding_demo.Main5Activity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->userPresenter.onUserNameClick(userInfo)}"
+            android:text="@{StringUtils.toUpperCase(userInfo.name)}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{userInfo.password}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:afterTextChanged="@{userPresenter.afterTextChanged}"
+            android:hint="用户名" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:afterTextChanged="@{userPresenter.afterUserPasswordChanged}"
+            android:hint="密码" />
+
+
+         <View
+             android:id="@+id/showStatus"
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:visibility="@{isVisible?View.VISIBLE:View.GONE}"
+             android:background="#ff0000"
+             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="改变View的显隐状态"
+            android:onClick="@{customHandler.changeViewStatus}"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义监听器"
+            android:onClick="@{()->customHandler.customListener(userInfo,isVisible)}"
+            />
+
+    </LinearLayout>
+
+</layout>
