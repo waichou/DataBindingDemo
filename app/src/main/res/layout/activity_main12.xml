@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="com.leavesc.databinding_demo.Main12Activity">
+        tools:context="com.leavesc.databinding_demo.ObservableCollectionActivity">
 
         <TextView
             android:layout_width="match_parent"

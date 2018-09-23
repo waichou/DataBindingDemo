@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.leavesc.databinding_demo.databinding.ActivityMain5Binding;
@@ -17,7 +16,7 @@ import com.leavesc.databinding_demo.model.User;
  * 时间：2018/5/16 22:32
  * 描述：
  */
-public class Main5Activity extends AppCompatActivity {
+public class EventBindingActivity extends AppCompatActivity {
 
     private ActivityMain5Binding activityMain5Binding;
 
@@ -36,7 +35,7 @@ public class Main5Activity extends AppCompatActivity {
     public class UserPresenter {
 
         public void onUserNameClick(User user) {
-            Toast.makeText(Main5Activity.this, "用户名：" + user.getName(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(EventBindingActivity.this, "用户名：" + user.getName(), Toast.LENGTH_SHORT).show();
         }
 
         public void afterTextChanged(Editable s) {

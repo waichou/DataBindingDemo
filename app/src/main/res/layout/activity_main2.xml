@@ -16,7 +16,7 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:orientation="vertical"
-        tools:context="com.leavesc.databinding_demo.Main2Activity">
+        tools:context="com.leavesc.databinding_demo.SimpleBindingActivity">
 
         <TextView
             android:id="@+id/tv_userName"

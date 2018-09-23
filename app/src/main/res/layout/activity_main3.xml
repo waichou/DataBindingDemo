@@ -7,7 +7,7 @@
 
         <import type="com.leavesc.databinding_demo.model.Goods" />
 
-        <import type="com.leavesc.databinding_demo.Main3Activity.GoodsHandler" />
+        <import type="com.leavesc.databinding_demo.BaseObservableActivity.GoodsHandler" />
 
         <variable
             name="goods"
@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="20dp"
-        tools:context=".Main3Activity">
+        tools:context=".BaseObservableActivity">
 
         <TextView
             android:layout_width="match_parent"

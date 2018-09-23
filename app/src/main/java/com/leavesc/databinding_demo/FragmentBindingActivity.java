@@ -8,7 +8,7 @@ import android.os.Bundle;
  * 时间：2018/5/21 20:47
  * 描述：
  */
-public class Main11Activity extends AppCompatActivity {
+public class FragmentBindingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

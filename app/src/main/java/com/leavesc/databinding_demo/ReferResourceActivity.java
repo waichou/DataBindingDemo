@@ -11,7 +11,7 @@ import com.leavesc.databinding_demo.databinding.ActivityMain9Binding;
  * 时间：2018/5/20 18:00
  * 描述：
  */
-public class Main9Activity extends AppCompatActivity {
+public class ReferResourceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

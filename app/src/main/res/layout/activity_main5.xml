@@ -9,11 +9,13 @@
 
         <import type="com.leavesc.databinding_demo.model.User" />
 
-        <import type="com.leavesc.databinding_demo.Main5Activity.UserPresenter" />
+        <import type="com.leavesc.databinding_demo.EventBindingActivity.CustomHandler" />
 
         <import type="com.leavesc.databinding_demo.StringUtils" />
 
-        <import type="com.leavesc.databinding_demo.Main5Activity.CustomHandler"/>
+        <import type="com.leavesc.databinding_demo.EventBindingActivity.UserPresenter"/>
+
+
 
         <variable
             name="userInfo"
@@ -37,7 +39,7 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp"
         android:orientation="vertical"
-        tools:context="com.leavesc.databinding_demo.Main5Activity">
+        tools:context="com.leavesc.databinding_demo.EventBindingActivity">
 
         <TextView
             android:layout_width="match_parent"

@@ -12,7 +12,7 @@ import com.leavesc.databinding_demo.model.User;
  * 时间：2018/5/16 20:22
  * 描述：
  */
-public class Main2Activity extends AppCompatActivity {
+public class SimpleBindingActivity extends AppCompatActivity {
 
     private User user;
 

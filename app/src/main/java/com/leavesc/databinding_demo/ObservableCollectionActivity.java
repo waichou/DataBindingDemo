@@ -18,7 +18,7 @@ import java.util.Random;
  * 时间：2018/5/21 21:32
  * 描述：
  */
-public class Main12Activity extends AppCompatActivity {
+public class ObservableCollectionActivity extends AppCompatActivity {
 
     private ObservableMap<String, String> map;
 

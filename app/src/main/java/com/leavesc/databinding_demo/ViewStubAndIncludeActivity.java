@@ -16,7 +16,7 @@ import com.leavesc.databinding_demo.model.User;
  * 时间：2018/5/19 10:51
  * 描述：
  */
-public class Main6Activity extends AppCompatActivity {
+public class ViewStubAndIncludeActivity extends AppCompatActivity {
 
     private ActivityMain6Binding activityMain6Binding;
 

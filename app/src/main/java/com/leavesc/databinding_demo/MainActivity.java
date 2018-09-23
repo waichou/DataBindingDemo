@@ -18,47 +18,47 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startActivity2(View view) {
-        startActivity(Main2Activity.class);
+        startActivity(SimpleBindingActivity.class);
     }
 
     public void startActivity3(View view) {//BaseObservable
-        startActivity(Main3Activity.class);
+        startActivity(BaseObservableActivity.class);
     }
 
     public void startActivity4(View view) {//ObservableField
-        startActivity(Main4Activity.class);
+        startActivity(ObservableFieldActivity.class);
     }
 
     public void startActivity12(View view) {//ObserableCollection
-        startActivity(Main12Activity.class);
+        startActivity(ObservableCollectionActivity.class);
     }
 
     public void startActivity5(View view) {//事件绑定
-        startActivity(Main5Activity.class);
+        startActivity(EventBindingActivity.class);
     }
 
     public void startActivity6(View view) {//viewStub 和 include
-        startActivity(Main6Activity.class);
+        startActivity(ViewStubAndIncludeActivity.class);
     }
 
     public void startActivity7(View view) {//其他数据类型
-        startActivity(Main7Activity.class);
+        startActivity(OtherDataBindingActivity.class);
     }
 
     public void startActivity8(View view) {//BindingAdapter 和 BindingConversion
-        startActivity(Main8Activity.class);
+        startActivity(BindingAdapterActivity.class);
     }
 
     public void startActivity9(View view) {//引用资源
-        startActivity(Main9Activity.class);
+        startActivity(ReferResourceActivity.class);
     }
 
     public void startActivity10(View view) {//双向绑定
-        startActivity(Main10Activity.class);
+        startActivity(DoubleBindingActivity.class);
     }
 
     public void startActivity11(View view) {//Fragment
-        startActivity(Main11Activity.class);
+        startActivity(FragmentBindingActivity.class);
     }
 
 

@@ -5,7 +5,7 @@
 
     <data>
 
-        <import type="com.leavesc.databinding_demo.Main6Activity.Handler" />
+        <import type="com.leavesc.databinding_demo.ViewStubAndIncludeActivity.Handler" />
 
         <import type="com.leavesc.databinding_demo.model.User" />
 
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Main6Activity">
+        tools:context=".ViewStubAndIncludeActivity">
 
         <Button
             android:id="@+id/btn_show"

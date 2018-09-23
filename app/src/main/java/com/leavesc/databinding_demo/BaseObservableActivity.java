@@ -19,7 +19,7 @@ import java.util.Random;
  * 时间：2018/5/16 21:07
  * 描述：
  */
-public class Main3Activity extends AppCompatActivity {
+public class BaseObservableActivity extends AppCompatActivity {
 
     private Goods goods;
 

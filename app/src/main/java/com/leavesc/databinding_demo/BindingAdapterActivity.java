@@ -21,7 +21,7 @@ import java.util.Random;
  * 时间：2018/5/20 14:10
  * 描述：
  */
-public class Main8Activity extends AppCompatActivity {
+public class BindingAdapterActivity extends AppCompatActivity {
 
     private static final String TAG = "Main8Activity";
 

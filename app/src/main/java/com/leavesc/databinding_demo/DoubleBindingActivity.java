@@ -12,7 +12,7 @@ import com.leavesc.databinding_demo.model.ObservableGoods;
  * 时间：2018/5/20 19:51
  * 描述：
  */
-public class Main10Activity extends AppCompatActivity {
+public class DoubleBindingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

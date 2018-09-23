@@ -17,7 +17,7 @@ import java.util.Set;
  * 时间：2018/5/20 17:05
  * 描述：
  */
-public class Main7Activity extends AppCompatActivity {
+public class OtherDataBindingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

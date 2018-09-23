@@ -14,7 +14,7 @@ import java.util.Random;
  * 时间：2018/5/16 22:15
  * 描述：
  */
-public class Main4Activity extends AppCompatActivity {
+public class ObservableFieldActivity extends AppCompatActivity {
 
     private ObservableGoods observableGoods;
 
