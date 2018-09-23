@@ -32,7 +32,7 @@ public class BaseObservableActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         activityMain3Binding = DataBindingUtil.setContentView(this, R.layout.activity_main3);
-        goods = new Goods("code", "hi", 24);
+        goods = new Goods("code", "hi", 24,"jilin");
         activityMain3Binding.setGoods(goods);
         activityMain3Binding.setGoodsHandler(new GoodsHandler());
         goods.addOnPropertyChangedCallback(new Observable.OnPropertyChangedCallback() {

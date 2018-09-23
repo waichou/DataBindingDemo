@@ -4,7 +4,7 @@
 
     <data>
 
-        <import type="com.leavesc.databinding_demo.model.ObservableGoods" />
+        <import type="com.leavesc.databinding_demo.model.ObservableGoods2" />
 
         <import type="com.leavesc.databinding_demo.ObservableFieldActivity.ObservableGoodsHandler" />
 
@@ -14,7 +14,7 @@
 
         <variable
             name="observableGoods"
-            type="ObservableGoods" />
+            type="ObservableGoods2" />
 
         <variable
             name="observableGoodsHandler"
@@ -57,5 +57,12 @@
             android:text="改变属性 details 和 price"
             android:textAllCaps="false" />
 
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:text="@={observableGoods.name}"
+            />
     </LinearLayout>
 </layout>

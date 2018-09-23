@@ -32,6 +32,10 @@
         <variable
             name="customHandler"
             type="CustomHandler"/>
+
+        <variable
+            name="strVal"
+            type="String"/>
     </data>
 
     <LinearLayout
@@ -87,6 +91,26 @@
             android:onClick="@{()->customHandler.customListener(userInfo,isVisible)}"
             />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onTextChanged="@{customHandler::onTextChanged222}"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{(v) -> customHandler.customClickListener(v,userInfo,true,strVal)}"
+            android:text="测试自定义onClick监听器参数"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onLongClick="@{(v)->customHandler.myOnLongClick(v,userInfo)}"
+            android:text="测试自定义onLongClick监听器参数"
+            />
     </LinearLayout>
 
 </layout>

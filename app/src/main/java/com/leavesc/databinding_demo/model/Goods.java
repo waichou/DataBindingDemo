@@ -20,10 +20,23 @@ public class Goods extends BaseObservable {//发现没有不能够双向绑定
 
     private float price;
 
-    public Goods(String name, String details, float price) {
+    private String address;
+
+    @Bindable
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+        notifyPropertyChanged(BR.address);
+    }
+
+    public Goods(String name, String details, float price, String address) {
         this.name = name;
         this.details = details;
         this.price = price;
+        this.address = address;
     }
 
     @Bindable

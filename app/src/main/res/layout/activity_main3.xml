@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{goods.name}" />
+            android:text="@{goods.address}" />
 
         <TextView
             android:layout_width="match_parent"
@@ -55,11 +55,18 @@
             android:text="改变属性 details 和 price"
             android:textAllCaps="false" />
 
+        <!-- 利用BaseObservable实现双向绑定 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="利用BaseObservable实现双向绑定"
+            />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top|left"
-            android:text="@={goods.name}"
+            android:text="@={goods.address}"
             />
 
         <EditText

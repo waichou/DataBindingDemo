@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.leavesc.databinding_demo.databinding.ActivityMain4Binding;
 import com.leavesc.databinding_demo.model.ObservableGoods;
+import com.leavesc.databinding_demo.model.ObservableGoods2;
 
 import java.util.Random;
 
@@ -16,7 +17,7 @@ import java.util.Random;
  */
 public class ObservableFieldActivity extends AppCompatActivity {
 
-    private ObservableGoods observableGoods;
+    private ObservableGoods2 observableGoods;
 
     private ActivityMain4Binding activityMain4Binding;
 
@@ -25,7 +26,7 @@ public class ObservableFieldActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
         activityMain4Binding = DataBindingUtil.setContentView(this, R.layout.activity_main4);
-        observableGoods = new ObservableGoods("code", "hello", 25);
+        observableGoods = new ObservableGoods2("code", "hello", 25);
         activityMain4Binding.setObservableGoods(observableGoods);
         activityMain4Binding.setObservableGoodsHandler(new ObservableGoodsHandler());
     }
@@ -33,11 +34,11 @@ public class ObservableFieldActivity extends AppCompatActivity {
     public class ObservableGoodsHandler {
 
         public void changeGoodsName() {
-            observableGoods.getName().set("code" + new Random().nextInt(100));
+//            observableGoods.getName().set("code" + new Random().nextInt(100));
         }
 
         public void changeGoodsDetails() {
-            observableGoods.getDetails().set("hi" + new Random().nextInt(100));
+//            observableGoods.getDetails().set("hi" + new Random().nextInt(100));
         }
 
     }
