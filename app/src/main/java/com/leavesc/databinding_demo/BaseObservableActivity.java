@@ -64,6 +64,8 @@ public class BaseObservableActivity extends AppCompatActivity {
         public void changeGoodsName() {
             goods.setName("code" + new Random().nextInt(100));
             goods.setPrice(new Random().nextInt(100));
+
+            goods.setCountry("美国");
         }
 
         public void changeGoodsDetails() {

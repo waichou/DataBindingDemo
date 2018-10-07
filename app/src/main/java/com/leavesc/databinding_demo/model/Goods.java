@@ -22,6 +22,19 @@ public class Goods extends BaseObservable {//发现没有不能够双向绑定
 
     private String address;
 
+    private String country;
+
+
+    @Bindable
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+        notifyPropertyChanged(BR.country);
+    }
+
     @Bindable
     public String getAddress() {
         return address;
@@ -37,6 +50,8 @@ public class Goods extends BaseObservable {//发现没有不能够双向绑定
         this.details = details;
         this.price = price;
         this.address = address;
+
+        country = "中国-吉林";
     }
 
     @Bindable
