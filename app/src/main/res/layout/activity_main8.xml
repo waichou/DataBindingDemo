@@ -22,6 +22,10 @@
         <variable
             name="show"
             type="Integer"/>
+
+        <variable
+            name="isShow"
+            type="Boolean"/>
     </data>
 
     <LinearLayout
@@ -76,6 +80,22 @@
             android:textColor='@{"红色",default=@color/colorAccent}'
             />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background='@{"蓝色"}'
+            android:padding="20dp"
+            android:text="蓝色背景红色字"
+            android:textColor='@{"红色",default=@color/colorAccent}'
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E2E2E2"
+            />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,6 +120,15 @@
             android:layout_height="1px"
             android:background="#e2e2e2"
             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{isShow}-boolean"
+            bind:visibility="@{isShow}"
+            />
+
+
 
     </LinearLayout>
 </layout>

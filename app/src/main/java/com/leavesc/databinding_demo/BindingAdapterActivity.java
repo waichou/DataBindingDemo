@@ -21,9 +21,9 @@ import com.leavesc.databinding_demo.model.Image;
 import java.util.Random;
 
 /**
- * 作者：叶应是叶
- * 时间：2018/5/20 14:10
- * 描述：
+ BindingAdapter 动态根据参数来更改当前View的状态
+ BindingConversion 动态根据参数来更改当前View的状态
+
  */
 public class BindingAdapterActivity extends AppCompatActivity {
 
@@ -42,7 +42,7 @@ public class BindingAdapterActivity extends AppCompatActivity {
 
     public void goneBtnClick(View view) {
         activityMain8Binding.setShow(View.GONE);
-
+        activityMain8Binding.setIsShow(false);
     }
 
     public void showBtnClick(View view) {
@@ -50,6 +50,8 @@ public class BindingAdapterActivity extends AppCompatActivity {
 //                name="show"
 //               type="Integer"/>   直接对这个show变量操作可以直接做出显隐
         activityMain8Binding.setShow(View.VISIBLE);
+
+        activityMain8Binding.setIsShow(true);
     }
 
     public class Handler {
@@ -104,4 +106,11 @@ public class BindingAdapterActivity extends AppCompatActivity {
     public static void showView(Button btn,int visible){//这个参数可以定义成实际匹配的View，或者定义成它的父View类；BindingAdapter注解在默认的情况下就会加载！
         btn.setVisibility(visible);
     }
+
+    @BindingAdapter("visibility")
+    public static void isVisiblityForView(View view ,boolean isShow){
+        view.setVisibility(isShow?View.VISIBLE:View.GONE);
+    }
+
+
 }
