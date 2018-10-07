@@ -101,7 +101,7 @@ public class BindingAdapterActivity extends AppCompatActivity {
 
 
     @BindingAdapter("showView")
-    public static void showView(Button btn,int visible){//BindingAdapter注解在默认的情况下就会加载！
+    public static void showView(Button btn,int visible){//这个参数可以定义成实际匹配的View，或者定义成它的父View类；BindingAdapter注解在默认的情况下就会加载！
         btn.setVisibility(visible);
     }
 }
