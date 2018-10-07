@@ -30,7 +30,6 @@ public class BaseObservableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
         activityMain3Binding = DataBindingUtil.setContentView(this, R.layout.activity_main3);
         goods = new Goods("code", "hi", 24,"jilin");
         activityMain3Binding.setGoods(goods);

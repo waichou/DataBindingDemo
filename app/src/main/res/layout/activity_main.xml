@@ -82,5 +82,13 @@
             android:textAllCaps="false"
             android:text="Fragment" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startTempTestClick"
+            android:textAllCaps="false"
+            android:text="testTest" />
+
+
     </LinearLayout>
 </ScrollView>

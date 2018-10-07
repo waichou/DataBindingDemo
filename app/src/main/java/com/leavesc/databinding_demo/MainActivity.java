@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import com.leavesc.databinding_demo.test.TestActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,5 +62,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(FragmentBindingActivity.class);
     }
 
+
+    public void startTempTestClick(View view) {
+        startActivity(TestActivity.class);
+    }
 
 }
