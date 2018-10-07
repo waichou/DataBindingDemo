@@ -113,4 +113,20 @@ public class BindingAdapterActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * 源码中@BindingAdapter注解的定义，可以看到：
+     - value属性是一个String数组，用来存放自定义的属性，示例：android:onItemClick，app:onItemClick
+     - requireAll是一个布尔值，用来表示定义的所有属性是否必须都要使用。
+
+     我们定义了3个属性，requireAll=false代表我们在使用时，可以只使用其中一个属性，也可以三个属性都使用；
+     如果requireAll=true，代表我们定义的这三个属性都是必须要使用的，不然就会报错。
+     * @param v
+     * @param boo
+     * @param value
+     */
+    @BindingAdapter(value = {"aaa","bbb"},requireAll = false)
+    public static void testAAABBB(Button v,boolean boo,int value){
+        v.setText("button is test! " + boo + "," + value);
+    }
+
 }

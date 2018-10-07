@@ -128,6 +128,14 @@
             bind:visibility="@{isShow}"
             />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{isShow}-boolean"
+            bind:aaa="@{true}"
+            bind:bbb="@{0}"
+            />
+
 
 
     </LinearLayout>
